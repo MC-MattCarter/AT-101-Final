@@ -1,0 +1,28 @@
+#box1{
+    display: inline-block;
+}
+.MileageZone1{
+    display: inline-block;
+}
+.MileageZone2{
+    display: inline-block;
+}
+.MileageZone3{
+    display: inline-block;
+}
+#ZoneTalk{
+    font-size: 18px;
+    
+}
+#img1{
+    width: 200px;
+    height: 200px;
+}
+body{
+    background-image: url("https://www.conncoll.edu/media/header-images/campus-and-community/beautiful-campus-photos-nature-architecture-studen/campus-aerial.jpg");
+    background-size: 1600px;
+    color:rgb(201, 109, 224);
+    
+    
+}
+
