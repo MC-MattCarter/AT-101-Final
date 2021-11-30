@@ -1,28 +1,73 @@
+body{
+    color:white;
+    background-image: url("https://www.conncoll.edu/media/header-images/campus-and-community/beautiful-campus-photos-nature-architecture-studen/campus-aerial.jpg"), url("https://athleticsweekly.com/wp-content/uploads/2014/11/mo_farah.jpg"),url("https://as01.epimg.net/en/imagenes/2019/10/12/other_sports/1570874562_899779_noticia_normal.jpg") ;
+    background-size: 1600px;
+    background-position: left top, left center, left bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 1500px;
+ 
+    
+}
 #box1{
+    color:black;
     display: inline-block;
+    background-color: white;
+}
+#box2{
+    color:black;
+    background-color: white;
+    width:fit-content;
+    
+}
+#MileageBox{
+    color:black;
+    background-color: white;
+    width: fit-content;
 }
 .MileageZone1{
+    color:white;
     display: inline-block;
+    background-color: yellowgreen;
 }
 .MileageZone2{
+    color:white;
     display: inline-block;
+    background-color: orange;
 }
 .MileageZone3{
+    color: white;
     display: inline-block;
+    background-color: orangered;
 }
 #ZoneTalk{
     font-size: 18px;
-    
+    color:black;
+    background-color: white;
+    width:fit-content;
+}
+#PaceTalk{
+    font-size: 18px;
+    background-color: white;
+    color:black;
+    width:fit-content;
 }
 #img1{
     width: 200px;
     height: 200px;
 }
-body{
-    background-image: url("https://www.conncoll.edu/media/header-images/campus-and-community/beautiful-campus-photos-nature-architecture-studen/campus-aerial.jpg");
-    background-size: 1600px;
-    color:rgb(201, 109, 224);
-    
-    
+#imgAlign{
+    text-align: center;
 }
+h1{
+    color: rgb(31, 5, 66);
+    font-size: 30px;
+    text-align: center;
+}
+.ultimatePace{
+    display:inline-block;
+    font-size: larger;
+    font-weight: bold;
+   
+}
+
 

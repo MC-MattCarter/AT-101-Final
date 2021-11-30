@@ -41,16 +41,27 @@ function  CalculatePace(){
     //Now the pace is in the correct units of minutes/mile, but there is still the issue of decimals, nobody wants to read that you have to run 7.5 minutes per mile, they want to read 7:30 per mile so now I have to come up with something fancy to solve that.
 
     //Idea: use decimal number-math.floor(decimal number), to isolate the decimal, then multiply by -1 to make it positive, then multiply by 60, then somehow attach that back onto the original number so it looks good. I might have to go back through the code and alter stuff so it gets in the proper form of [mm] : [ss] and simply use different text boxes for each of them and place them close together so it looks like they are a singluar box.
-
-    //var Pace2 = Pace1 - math.floor(Pace1)
     
+    //Rounded down number (no decimal)
+    var Pace2 = Math.floor(Pace1)
+    //The decimal that goes with it
+    var Pace3 = Pace1 - Math.floor(Pace1)
+    var Pace4 = Pace3*60
     
 
 
-
+    //Pace whole integer value
     var finalPace = document.getElementById("finalPace");
     while(finalPace.firstChild)finalPace.removeChild(finalPace.firstChild)
 
-    var paceResult = document.createTextNode(Pace1);
+    var paceResult = document.createTextNode(Pace2);
     finalPace.appendChild(paceResult);
+
+    //Pace decimal value (now in seconds)
+    var paceDecimal = document.getElementById("paceDecimal");
+    while(paceDecimal.firstChild)paceDecimal.removeChild(paceDecimal.firstChild)
+
+    var paceResultD = document.createTextNode(Pace4);
+    paceDecimal.appendChild(paceResultD);
+
 }

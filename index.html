@@ -11,9 +11,14 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <p id="ZoneTalk">Use the box below to enter your weekly running mileage and see how many miles you should be running in the 3 main heartrate/effort zones according to a polarized training strategy (see picture)<p>
-        <img src="https://i1.wp.com/tuusasports.com/wp-content/uploads/2021/03/Na%CC%88ytto%CC%88kuva-2021-3-11-kello-13.37.08.png?resize=507%2C510&ssl=1" id="img1">
-        <form onsubmit="CalculateZones(); return false;">
+        <h1>Running Calculators</h1>
+        <p id="ZoneTalk">Zone 1 is classified as the "low intesity" zone which means that the effort should be relatively comfortable and you should be able to hold a conversation while running at this effort. The vast majority of miles should be run at this pace.</p>
+        <p id="ZoneTalk">Zone 2 is classified as the "moderate intesity" zone which means that the effort should be more difficult and tiring and the runner should be working hard enough so that conversation is a lot more difficult. One example of training in zone 2 includes tempo runs which are longer efforts that are moderately slower than race pace. This zone should have the fewest miles run at this pace.</p>
+        <p id="ZoneTalk">Zone 3 is classified as the "high intesity" zone which means that the effort should be quite difficult and not able to be sustained for a long period of time. It should be quite rigorous and conversation should essentially be not possible. One example of training in zone 3 includes interval training at goal race pace. This zone should have the second most miles run at this pace.</p>
+        <div id="imgAlign">
+        <img src="https://i1.wp.com/tuusasports.com/wp-content/uploads/2021/03/Na%CC%88ytto%CC%88kuva-2021-3-11-kello-13.37.08.png?resize=507%2C510&ssl=1" id="img1"></div>
+        <p id="ZoneTalk">Use the box below to enter your weekly running mileage and see how many miles you should be running in the 3 main heartrate/effort zones according to a polarized training strategy (see picture).</p>
+        <form onsubmit="CalculateZones(); return false;" id="MileageBox">
             Weekly Mileage:
             <input type="number" id="WklyMlg" size="5">
             <input type="submit" value="Calculate Mileage in Zones">
@@ -23,11 +28,13 @@
         <p class="MileageZone2">Zone 2 Mileage:<p id="Zone2" class="MileageZone2"></p></p>
         <p class="MileageZone3">Zone 3 Mileage:<p id="Zone3" class="MileageZone3"></p></p>
         
-        <p>More test text here blah blah blah fill in later</p>
-        <form>
+        <p id="PaceTalk">Use the calculator below to enter a specefic distance of choice as well as a time that you would like to run that distance, and it will calculate the pace in minutes/mile that you would have to run at in order to achieve that goal.</p>
+    
+        <form id="box2">
             Distance (in miles):  
             <input type="number" id="Dst" size="5">
         </form>
+
         <div id="box1">
         <form>
             Time running (hh:mm:ss)  
@@ -46,7 +53,18 @@
             <input type="number" id="Scd" size="2" maxlength="2" width="2" min="0" max="99">
         </form>
         </div>
-        <p><p id="finalPace"></p>minutes/mile</p>
         <input type="button" onclick="CalculatePace()" value="Calculate Pace">
+        <div></div>
+        <p id="finalPace" class="ultimatePace"></p>
+        <p class="ultimatePace">:</p>
+        <p id="paceDecimal" class="ultimatePace"></p>
+        <p class="ultimatePace">per mile</p>
+
+        <!-- I get an error message from youtube about authorization when I try to embed a video. -->
+        <!-- <iframe src="https://www.youtube.com/watch?v=C93qwVmBseE"></iframe> -->
+        
+        
+
+        
     </body>
 </html>
