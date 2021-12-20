@@ -40,7 +40,7 @@ function  CalculatePace(){
     //for some reason the Mnt1 variable was essential in holding this together otherwise the answer would always be off by some factor of 10 or 100, Im not sure why though it just multiplied a variable by 1 so it I wouldnt think it would do anything but I guess it does. It probably took me like 70 minutes of wondering why the math wasnt working before trying that. 
     //Now the pace is in the correct units of minutes/mile, but there is still the issue of decimals, nobody wants to read that you have to run 7.5 minutes per mile, they want to read 7:30 per mile so now I have to come up with something fancy to solve that.
 
-    //Idea: use decimal number-math.floor(decimal number), to isolate the decimal, then multiply by -1 to make it positive, then multiply by 60, then somehow attach that back onto the original number so it looks good. I might have to go back through the code and alter stuff so it gets in the proper form of [mm] : [ss] and simply use different text boxes for each of them and place them close together so it looks like they are a singluar box.
+    //Idea: use decimal number-math.floor(decimal number), to isolate the decimal, then multiply by 60, then somehow attach that back onto the original number so it looks good. I might have to go back through the code and alter stuff so it gets in the proper form of [mm] : [ss] and simply use different text boxes for each of them and place them close together so it looks like they are a singluar box.
     
     //Rounded down number (no decimal)
     var Pace2 = Math.floor(Pace1)
